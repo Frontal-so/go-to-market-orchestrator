@@ -1,0 +1,62 @@
+{
+  "name": "gtm-notify",
+  "version": "2.0.0",
+  "description": "Pings Slack, Discord or any webhook (Zapier, n8n, Make, Clay) when Claude finishes a turn or needs you, with Claude's actual message in the ping.",
+  "author": {
+    "name": "Frontal",
+    "url": "https://frontal.so"
+  },
+  "homepage": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "repository": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "license": "MIT",
+  "keywords": [
+    "gtm",
+    "slack",
+    "discord",
+    "webhook",
+    "notifications",
+    "zapier",
+    "n8n",
+    "make",
+    "clay"
+  ],
+  "userConfig": {
+    "slack_webhook_url": {
+      "type": "string",
+      "title": "Slack incoming webhook URL",
+      "description": "Optional. Slack: Apps > Incoming Webhooks > Add to channel. Leave empty to skip Slack.",
+      "required": false,
+      "sensitive": true
+    },
+    "discord_webhook_url": {
+      "type": "string",
+      "title": "Discord webhook URL",
+      "description": "Optional. Discord: channel settings > Integrations > Webhooks. Leave empty to skip Discord.",
+      "required": false,
+      "sensitive": true
+    },
+    "webhook_url": {
+      "type": "string",
+      "title": "Any other webhook URL (Zapier, n8n, Make, Clay)",
+      "description": "Optional. Receives one JSON object per event (see the plugin README for the fields).",
+      "required": false,
+      "sensitive": true
+    },
+    "ping_on_stop": {
+      "type": "boolean",
+      "title": "Ping every time Claude finishes a turn",
+      "description": "Off = ping only when Claude is waiting for you (permission prompt, idle, a question).",
+      "required": false,
+      "default": true
+    },
+    "max_chars": {
+      "type": "number",
+      "title": "How many characters of Claude's message to include",
+      "description": "0 sends no message text, only the project name and event.",
+      "required": false,
+      "default": 500,
+      "min": 0,
+      "max": 3000
+    }
+  }
+}

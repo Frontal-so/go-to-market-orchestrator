@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
+
+# Prospect and customer data the skills read and write. Never commit it.
+input/
+output/
+data/
+content/

@@ -1,0 +1,12 @@
+field,value
+product_name,[Your product]
+product_description,"[What you sell and to whom, in one sentence]"
+target_industries,"[Up to three, e.g. B2B software, payments, health tech]"
+target_company_size_min,50
+target_company_size_max,600
+key_value_props,[First reason buyers choose you]|[Second reason]|[Third reason]
+common_objections,"[What prospects say first, e.g. we built this in-house]|[Second objection]|[Third objection]"
+case_studies,"[Kind of customer: the result, with a number you can show]|[Second customer: result]"
+sender_name,[First and last name]
+sender_title,[Your role]
+sender_company,[Your company]

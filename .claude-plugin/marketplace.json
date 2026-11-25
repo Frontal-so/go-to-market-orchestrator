@@ -1,0 +1,40 @@
+{
+  "name": "frontal-gtm",
+  "owner": { "name": "Frontal", "url": "https://frontal.so" },
+  "description": "Go-to-market plugins for Claude Code: an outbound pipeline, a GTM content library, Slack/Discord/webhook pings, and a best-effort guard that asks before calls that look like your sales tools sending, spending credits or changing records.",
+  "version": "2.0.0",
+  "plugins": [
+    {
+      "name": "gtm-outbound",
+      "source": "./plugins/gtm-outbound",
+      "description": "Outbound pipeline: signal research, lead scoring, prospect profiles, first lines, sequences, reply triage, meeting prep and pipeline reviews, run by seven subagents. Drafts to files; nothing is sent without you.",
+      "version": "2.0.0",
+      "category": "sales",
+      "tags": ["gtm", "outbound", "sales", "prospecting", "cold-email"]
+    },
+    {
+      "name": "gtm-content",
+      "source": "./plugins/gtm-content",
+      "description": "17 GTM content prompts as one skill: case studies, ICP cards, LinkedIn carousels, one-pagers, pitch decks, proposals, pricing pages and scopes of work, written from facts you supply.",
+      "version": "2.0.0",
+      "category": "sales",
+      "tags": ["gtm", "content", "sales-enablement", "case-study", "proposal"]
+    },
+    {
+      "name": "gtm-notify",
+      "source": "./plugins/gtm-notify",
+      "description": "Pings Slack, Discord or any webhook (Zapier, n8n, Make, Clay) when Claude finishes or needs you, with Claude's real message in the ping.",
+      "version": "2.0.0",
+      "category": "productivity",
+      "tags": ["slack", "discord", "webhook", "notifications"]
+    },
+    {
+      "name": "gtm-guard",
+      "source": "./plugins/gtm-guard",
+      "description": "A best-effort check that makes Claude ask before sales-tool calls that look like sending email, launching sequences, spending enrichment credits, changing CRM records or deleting data, and logs each such call. A safety net, not a guarantee.",
+      "version": "2.0.0",
+      "category": "security",
+      "tags": ["safety", "mcp", "crm", "outbound"]
+    }
+  ]
+}

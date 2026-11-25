@@ -1,0 +1,10 @@
+{
+  "name": "gtm-outbound",
+  "version": "2.0.0",
+  "description": "Outbound pipeline for Claude Code: signal research, lead scoring, prospect profiles, first lines, sequences, reply triage, meeting prep and pipeline reviews, run by seven subagents. Everything is drafted to files in your project; nothing is sent, enrolled or written to a CRM until you say yes.",
+  "author": { "name": "Frontal", "url": "https://frontal.so" },
+  "homepage": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "repository": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "license": "MIT",
+  "keywords": ["gtm", "outbound", "sales", "prospecting", "cold-email", "signals", "icp", "clay", "apollo", "hubspot"]
+}

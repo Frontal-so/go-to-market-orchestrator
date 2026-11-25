@@ -1,0 +1,10 @@
+{
+  "name": "gtm-content",
+  "version": "2.0.0",
+  "description": "17 GTM content prompts as one skill: case studies, ICP cards, LinkedIn carousels, one-pagers, pitch decks, proposals, pricing pages and scopes of work. Written only from facts you supply; gaps are marked for you to fill.",
+  "author": { "name": "Frontal", "url": "https://frontal.so" },
+  "homepage": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "repository": "https://github.com/Frontal-so/go-to-market-orchestrator",
+  "license": "MIT",
+  "keywords": ["gtm", "content", "sales-enablement", "case-study", "one-pager", "pitch-deck", "proposal", "linkedin"]
+}
