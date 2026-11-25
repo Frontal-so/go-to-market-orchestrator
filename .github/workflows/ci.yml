@@ -10,10 +10,15 @@ permissions:
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ["3.9", "3.13"]
+        include:
+          # Ubuntu 26.04 has no Python 3.9 build, so the oldest supported version runs on 24.04.
+          - python: "3.9"
+            os: ubuntu-24.04
+          - python: "3.13"
+            os: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
